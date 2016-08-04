@@ -205,6 +205,7 @@
 		            <li><a href="#" data-nav-section="services"><span>Applications</span></a></li>
 		            <li><a href="#" data-nav-section="team"><span>The Secretariat</span></a></li>
 		            <li><a href="#" data-nav-section="sponsors"><span>Past Sponsors</span></a></li>
+		            <li><a href="#" data-nav-section="contact"><span>Contact Us</span></a></li>
 		          </ul>
 		        </div>
 			    </nav>
@@ -451,8 +452,26 @@
 			</div>
 		</div>
 	</div>
-	
-	
+
+	<!-- Add map -->
+	<div id="fh5co-about-us" data-section="contact" style="padding:2em">
+		<div class="container">
+			<div class="row row-bottom-padded-lg" id="about-us">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">Contact Us</h2>
+					<div class="row">
+						<div class="col-md-4 to-animate" id="map" style="width:400px;height:400px">
+						</div>
+						<div class="col-md-4 to-animate text-left" style="font-size:20px">
+						Address<br>
+						Phone<br>
+						Email
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<footer id="footer" role="contentinfo">
 		<div class="container">
@@ -472,7 +491,7 @@
 			</div>
 		</div>
 	</footer>
-	<!-- Add map -->
+	
 	
 
 	
@@ -486,10 +505,18 @@
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Owl Carousel -->
 	<script src="js/owl.carousel.min.js"></script>
-
+	<!-- Google Maps -->
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
+	<script>
+	var mapCanvas = document.getElementById("map");
+	var mapOptions = {
+	    center: new google.maps.LatLng(17.5454933, 78.5704261), zoom: 14,scrollwheel:false
+	}
+	var map = new google.maps.Map(mapCanvas, mapOptions);
+	</script>
 
 	</body>
 </html>
