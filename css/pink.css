@@ -616,7 +616,8 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   bottom: 0;
   top: 0;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 @media screen and (max-width: 480px) {
   #fh5co-press .fh5co-press-item .fh5co-press-img {
@@ -1007,28 +1008,7 @@ h1, h2, h3, h4, h5, h6 {
 .owl-carousel-fullwidth .item img {
   max-width: 100%;
 }
-.owl-carousel-fullwidth .item .iphone-image {
-  position: relative;
-  z-index: 99;
-}
-.owl-carousel-fullwidth .item .iphone-image .iphone {
-  float: right;
-  text-align: right;
-  position: relative;
-  bottom: -12em;
-}
-@media screen and (max-width: 768px) {
-  .owl-carousel-fullwidth .item .iphone-image .iphone {
-    bottom: 0em;
-    text-align: center;
-    float: none !important;
-    margin: 0 auto;
-    display: block;
-  }
-}
-.owl-carousel-fullwidth .item .iphone-image .iphone img {
-  max-width: 100%;
-}
+
 .owl-carousel-fullwidth .item .fh5co-owl-text {
   display: table-cell;
   vertical-align: middle;
@@ -1037,12 +1017,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 .owl-carousel-fullwidth .item .fh5co-owl-text a {
   color: white;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+/*  border-bottom: 1px solid rgba(255, 255, 255, 0.5);*/
 }
 .owl-carousel-fullwidth .item .fh5co-owl-text a:hover {
   text-decoration: none;
   color: white;
-  border-bottom: 1px solid white;
+}
+.owl-carousel-fullwidth .item .fh5co-owl-text a img:hover{
+  /*filter: grayscale(100%);
+  -webkit-filter: grayscale(100%); */
+/*  -webkit-filter: drop-shadow(8px 8px 10px orange);  Chrome, Safari, Opera 
+    filter: drop-shadow(8px 8px 10px red);*/
+     -webkit-filter: sepia(100%); /* Chrome, Safari, Opera */
+    filter: sepia(100%);
 }
 .owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-lead, .owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-lead-2, .owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-sub-lead {
   color: #fff;
@@ -1052,17 +1039,17 @@ h1, h2, h3, h4, h5, h6 {
 .owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-lead {
   font-weight: 700;
   margin-bottom: 20px;
-  margin-top: 0;
+  margin-top: 100px;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #fff;
   font-size: 50px;
   line-height: 50px;
-  color: #fff;
+  color: #e7e3de;
 }
 @media screen and (max-width: 768px) {
   .owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-lead {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     font-size: 30px;
     line-height: 30px;
   }
@@ -1073,7 +1060,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 42px;
   font-weight: 100;
   margin-bottom: 30px;
-  color: white;
+  color: #e7e3de;
 }
 @media screen and (max-width: 768px) {
   .owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-sub-lead {
