@@ -33,7 +33,6 @@ a:hover, a:active, a:focus {
   color: #ff751a;
   outline: none;
 }
-
 p {
   margin-bottom: 1.5em;
 }
@@ -286,7 +285,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-testimonials,
 #fh5co-pricing,
 #fh5co-press {
-  padding: 7em 0;
+  padding: 5em 0;
 }
 @media screen and (max-width: 480px) {
   #fh5co-our-services,
