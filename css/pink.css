@@ -57,7 +57,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #818892;
   background: #f9f6f0;
 }
-
+.date{
+  /*text-transform: uppercase;*/
+  color: white;
+  font-weight: 1.2;
+}
 #fh5co-header {
   position: absolute;
   z-index: 99;
@@ -1038,7 +1042,7 @@ h1, h2, h3, h4, h5, h6 {
 .owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-lead {
   font-weight: 700;
   margin-bottom: 20px;
-  margin-top: 100px;
+  margin-top: 80px;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #fff;
@@ -1114,5 +1118,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-
+.atmos:hover{
+  
+}
 /*# sourceMappingURL=pink.css.map */
