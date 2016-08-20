@@ -11,7 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<meta name="description" content="BITSMUN Official Webpage" />
 	<meta name="keywords" content="BITS Pilani,BITS,Hyderabad,Pilani,Goa,MUN,united nations, model" />
-	<meta name="author" content="Avi" />
+	<meta name="author" content="BITSMUN Society" />
 
   <!-- 
 	//////////////////////////////////////////////////////
@@ -24,13 +24,13 @@
 
   <!-- Facebook and Twitter integration -->
 	<meta property="og:title" content="BITSMUN Hyderabad"/>
-	<meta property="og:image" content="https://pbs.twimg.com/profile_images/622071078974681088/2ugenjiw.png"/>
-	<meta property="og:url" content="www.bitsmunhyd.in"/>
+	<meta property="og:image" content="images/sharephoto.jpg"/>
+	<meta property="og:url" content="'http://www.bitsmunhyd.in"/>
 	<meta property="og:site_name" content=""/>
 	<meta property="og:description" content=""/>
 	<meta name="twitter:title" content="BITSMUN Hyderabad" />
 	<meta name="twitter:image" content="images/logofb.jpg" />
-	<meta name="twitter:url" content="www.bitsmunhyd.in" />
+	<meta name="twitter:url" content="'http://www.bitsmunhyd.in" />
 	<meta name="twitter:card" content="" />
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -441,7 +441,7 @@
 								<div class="position">Secretary-General</div>
 								<ul class="social social-circle">
 									<li><a href="https://www.facebook.com/profile.php?id=100007416738825" target="_blank"><i class="icon-social-facebook"></i></a></li>
-									<li><a data-toggle="modal" data-target="#neelnumber"><i class="icon-phone"></i></a></li>
+									<li><a data-toggle="tooltip" data-placement="top" title="9912251287"><i class="icon-phone"></i></a></li>
 									
 									<!-- <li><a href="#"><i class="icon-envelop"></i></a></li> -->
 								</ul>
@@ -454,7 +454,7 @@
 								<div class="position">Director-General</div>
 								<ul class="social social-circle">
 									<li><a href="https://www.facebook.com/pratyush.pulipaka" target="_blank"><i class="icon-social-facebook"></i></a></li>
-									<li><a><i class="icon-phone" data-toggle="modal" data-target="#pratnumber"></i></a></li>
+									<li><a><i class="icon-phone" data-toggle="tooltip" data-placement="top" title="7207830398"></i></a></li>
 									
 									<!-- <li><a href="#"><i class="icon-envelop"></i></a></li> -->
 								</ul>
@@ -467,7 +467,7 @@
 								<div class="position">Under-Secretary</div>
 								<ul class="social social-circle">
 									<li><a href="https://www.facebook.com/rai.ishan97" target="_blank"><i class="icon-social-facebook"></i></a></li>
-									<li><a data-toggle="modal" data-target="#ishannumber"><i class="icon-phone"></i></a></li>
+									<li><a data-toggle="tooltip" data-placement="top" title="9912251287"><i class="icon-phone"></i></a></li>
 									
 									<!-- <li><a href="#"><i class="icon-envelop"></i></a></li> -->
 								</ul>
@@ -641,9 +641,14 @@
 		<div class="container">
 			<div class="row text-center">
 				
-				<h3>Check out our techno-management festival</h3>
-				<a href="https://bits-atmos.org/" target="_blank"><img src="images/atmos.jpg" class="atmoslogo"> </a>
-				 <a href="https://bits-atmos.org/" target="_blank"><h3 class="atmos animated" >ATMOS</a> - The Enigma Unveiled</h3>
+				<h3 style="color:#444444">Check out our techno-management festival</h3>
+				<a href="https://bits-atmos.org/" target="_blank" class="atmoslogo" style="
+    				text-decoration: none;"><img src="images/atmosgrey.jpg" > </a>
+				 <a href="https://bits-atmos.org/" target="_blank">
+				 <!-- <h3 style="color:#444444"  >ATMOS</a> -->
+				 <br> 
+				 <img src="images/atmostxt.jpg"></a>
+				 <h4 style="color:#444444" class="atmos animated"> The Enigma Unveiled</h4>
 				<!-- <a href="https://bits-atmos.org/" target="_blank"><img src="images/atmos.jpg"></a> -->
 			</div>
 		</div>
@@ -687,6 +692,7 @@
 			}
 		});
 		 $(".atmoslogo").hover(function() {
+		 	$(".atmos").style
 		    $(".atmos").toggleClass("fadeInUp");
 		 });
 	</script>
