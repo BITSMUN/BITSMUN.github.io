@@ -1127,5 +1127,14 @@ h1, h2, h3, h4, h5, h6 {
 .apply{
   font-size: 20px;
 }
+.tooltip > .tooltip-inner {
+    background-color: #FF751A; 
+    color: #FFFFFF; 
+    padding: 15px;
+    font-size: 16px;
+}
+.tooltip.top > .tooltip-arrow {
+    border-top: 5px solid #FF751A;
+}
 
 /*# sourceMappingURL=pink.css.map */
